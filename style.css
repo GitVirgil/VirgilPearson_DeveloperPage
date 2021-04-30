@@ -1,5 +1,6 @@
-.row1 {
+.row1 row {
     height: 890px;
+
 }
 
 .super-wide {
@@ -24,55 +25,59 @@ box-sizing: border-box;
     float: left;
     padding: 20px;
 }
-    
+.my-flex-container {
+    border: 4px solid black;
+    height: 900px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 40px;
+} 
+
+.my-flex-container-column {
+    border: 10px solid black;
+    height: 200px;
+    margin-bottom: 40px;
+}
+.my-flex-item {
+    background-color: burlywood;
+    border: 10px black;
+    height: 100px;   
+}
+
+.contact-flex-container-column {
+    border: 10px solid black;
+    height: 200px;
+    margin-bottom: 40px;
+}
 .port {
-    background-color: lightblue;
     text-align: center;
-    padding: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-.my-column1 {                           /* from portfolio html */  
-    height: 225px;
-    text-align: center;
-    padding:50px;
-    font-size: 55px;
-    font-weight: bolder;   
-}
+    margin-top: auto;
+}    
+
 .contact-column {                          /* From contact html */
  height: 850px;
  text-align: center;
  padding: 40px;
- 
-}
-.bg-info {
-    font-size: 20px;
-}
-.col-md-8 contact-column bg-info {
-    display: flex;
-    flex-flow: row wrap;
 }
 
-.col-md-4 contact-column bg-info {
-    display: flex;
-    flex-wrap: row wrap;
+.bg-info {
+    font-size: 20px;
 }
 
 .first-nm {                             /* from contact/form 1st name */
     margin-bottom: 20px;
     margin-top: 65px;
-    flex: 3;
 }
 
 .email-add {                             /* from contact/from Email */
     margin-bottom: 20px;
-    flex: 3;
+
 }
 
 .textt-form {
     height: 50px;
     margin-bottom: 15px;
-    flex: 3;
+    
 }
 .submit-b {
     padding: top 20px;
@@ -81,21 +86,13 @@ height: 35px;
 margin-top: 30px;
 }
 
-.card {
-    padding: 20px;
-    margin-top: 169px;
-    margin-bottom: auto;
-    margin-right: 150px;
-     
-
+.container {
+    justify-content: center;  
+    
 }
 
 .footer {
     text-align: center;
-    width: 100%;   
+    width: 100%; 
 }
-@media all and (max-width: 741px) { 
-    .col-md-4 contact-column bg-info {
-        flex-direction: column;
-    }
-}
+
